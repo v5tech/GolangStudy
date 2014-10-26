@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D248FFAF19FC327800793FF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248FFAE19FC327800793FF0 /* DetailViewController.swift */; };
+		D287156219FBFCD100C4C50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287156119FBFCD100C4C50F /* AppDelegate.swift */; };
+		D287156419FBFCD100C4C50F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287156319FBFCD100C4C50F /* ViewController.swift */; };
+		D287156719FBFCD100C4C50F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D287156519FBFCD100C4C50F /* Main.storyboard */; };
+		D287156919FBFCD100C4C50F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D287156819FBFCD100C4C50F /* Images.xcassets */; };
+		D287156C19FBFCD100C4C50F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D287156A19FBFCD100C4C50F /* LaunchScreen.xib */; };
+		D28715D819FC1A0A00C4C50F /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = D287158519FC1A0A00C4C50F /* default.css */; };
+		D28715D919FC1A0A00C4C50F /* go_array.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158619FC1A0A00C4C50F /* go_array.html */; };
+		D28715DA19FC1A0A00C4C50F /* go_atomic_counter.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158719FC1A0A00C4C50F /* go_atomic_counter.html */; };
+		D28715DB19FC1A0A00C4C50F /* go_base64_encoding.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158819FC1A0A00C4C50F /* go_base64_encoding.html */; };
+		D28715DC19FC1A0A00C4C50F /* go_buffered_channel.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158919FC1A0A00C4C50F /* go_buffered_channel.html */; };
+		D28715DD19FC1A0A00C4C50F /* go_channel_close.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158A19FC1A0A00C4C50F /* go_channel_close.html */; };
+		D28715DE19FC1A0A00C4C50F /* go_channel_direction.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158B19FC1A0A00C4C50F /* go_channel_direction.html */; };
+		D28715DF19FC1A0A00C4C50F /* go_channel_range.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158C19FC1A0A00C4C50F /* go_channel_range.html */; };
+		D28715E019FC1A0A00C4C50F /* go_channel_select.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158D19FC1A0A00C4C50F /* go_channel_select.html */; };
+		D28715E119FC1A0A00C4C50F /* go_channel_sync.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158E19FC1A0A00C4C50F /* go_channel_sync.html */; };
+		D28715E219FC1A0A00C4C50F /* go_cmd_line_argument.html in Resources */ = {isa = PBXBuildFile; fileRef = D287158F19FC1A0A00C4C50F /* go_cmd_line_argument.html */; };
+		D28715E319FC1A0A00C4C50F /* go_cmd_line_tag.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159019FC1A0A00C4C50F /* go_cmd_line_tag.html */; };
+		D28715E419FC1A0A00C4C50F /* go_collection_manipulate.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159119FC1A0A00C4C50F /* go_collection_manipulate.html */; };
+		D28715E519FC1A0A00C4C50F /* go_constant.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159219FC1A0A00C4C50F /* go_constant.html */; };
+		D28715E619FC1A0A00C4C50F /* go_customized_sort.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159319FC1A0A00C4C50F /* go_customized_sort.html */; };
+		D28715E719FC1A0A00C4C50F /* go_defer.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159419FC1A0A00C4C50F /* go_defer.html */; };
+		D28715E819FC1A0A00C4C50F /* go_environment_variable.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159519FC1A0A00C4C50F /* go_environment_variable.html */; };
+		D28715E919FC1A0A00C4C50F /* go_error_handle.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159619FC1A0A00C4C50F /* go_error_handle.html */; };
+		D28715EA19FC1A0A00C4C50F /* go_exit.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159719FC1A0A00C4C50F /* go_exit.html */; };
+		D28715EB19FC1A0A00C4C50F /* go_for_loop.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159819FC1A0A00C4C50F /* go_for_loop.html */; };
+		D28715EC19FC1A0A00C4C50F /* go_func_callback.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159919FC1A0A00C4C50F /* go_func_callback.html */; };
+		D28715ED19FC1A0A00C4C50F /* go_func_closure.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159A19FC1A0A00C4C50F /* go_func_closure.html */; };
+		D28715EE19FC1A0A00C4C50F /* go_func_define.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159B19FC1A0A00C4C50F /* go_func_define.html */; };
+		D28715EF19FC1A0A00C4C50F /* go_func_multiple_ret_value.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159C19FC1A0A00C4C50F /* go_func_multiple_ret_value.html */; };
+		D28715F019FC1A0A00C4C50F /* go_func_named_ret_value.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159D19FC1A0A00C4C50F /* go_func_named_ret_value.html */; };
+		D28715F119FC1A0A00C4C50F /* go_hello_world.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159E19FC1A0A00C4C50F /* go_hello_world.html */; };
+		D28715F219FC1A0A00C4C50F /* go_if_elseif.html in Resources */ = {isa = PBXBuildFile; fileRef = D287159F19FC1A0A00C4C50F /* go_if_elseif.html */; };
+		D28715F319FC1A0A00C4C50F /* go_interface.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A019FC1A0A00C4C50F /* go_interface.html */; };
+		D28715F419FC1A0A00C4C50F /* go_json.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A119FC1A0A00C4C50F /* go_json.html */; };
+		D28715F519FC1A0A00C4C50F /* go_line_filters.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A219FC1A0A00C4C50F /* go_line_filters.html */; };
+		D28715F619FC1A0A00C4C50F /* go_map.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A319FC1A0A00C4C50F /* go_map.html */; };
+		D28715F719FC1A0A00C4C50F /* go_method.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A419FC1A0A00C4C50F /* go_method.html */; };
+		D28715F819FC1A0A00C4C50F /* go_mutex.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A519FC1A0A00C4C50F /* go_mutex.html */; };
+		D28715F919FC1A0A00C4C50F /* go_non_blocking_channel.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A619FC1A0A00C4C50F /* go_non_blocking_channel.html */; };
+		D28715FA19FC1A0A00C4C50F /* go_number.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A719FC1A0A00C4C50F /* go_number.html */; };
+		D28715FB19FC1A0A00C4C50F /* go_number_parse.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A819FC1A0A00C4C50F /* go_number_parse.html */; };
+		D28715FC19FC1A0A00C4C50F /* go_panic.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715A919FC1A0A00C4C50F /* go_panic.html */; };
+		D28715FD19FC1A0A00C4C50F /* go_parallel.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715AA19FC1A0A00C4C50F /* go_parallel.html */; };
+		D28715FE19FC1A0A00C4C50F /* go_parallel_channel.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715AB19FC1A0A00C4C50F /* go_parallel_channel.html */; };
+		D28715FF19FC1A0A00C4C50F /* go_pointer.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715AC19FC1A0A00C4C50F /* go_pointer.html */; };
+		D287160019FC1A0A00C4C50F /* go_process_run.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715AD19FC1A0A00C4C50F /* go_process_run.html */; };
+		D287160119FC1A0A00C4C50F /* go_process_trigger.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715AE19FC1A0A00C4C50F /* go_process_trigger.html */; };
+		D287160219FC1A0A00C4C50F /* go_rand_number.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715AF19FC1A0A00C4C50F /* go_rand_number.html */; };
+		D287160319FC1A0A00C4C50F /* go_range.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B019FC1A0A00C4C50F /* go_range.html */; };
+		D287160419FC1A0A00C4C50F /* go_read_file.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B119FC1A0A00C4C50F /* go_read_file.html */; };
+		D287160519FC1A0A00C4C50F /* go_recursion.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B219FC1A0A00C4C50F /* go_recursion.html */; };
+		D287160619FC1A0A00C4C50F /* go_regex.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B319FC1A0A00C4C50F /* go_regex.html */; };
+		D287160719FC1A0A00C4C50F /* go_req_freq_control.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B419FC1A0A00C4C50F /* go_req_freq_control.html */; };
+		D287160819FC1A0A00C4C50F /* go_sha1_hash.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B519FC1A0A00C4C50F /* go_sha1_hash.html */; };
+		D287160919FC1A0A00C4C50F /* go_signal_handle.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B619FC1A0A00C4C50F /* go_signal_handle.html */; };
+		D287160A19FC1A0A00C4C50F /* go_slice.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B719FC1A0A00C4C50F /* go_slice.html */; };
+		D287160B19FC1A0A00C4C50F /* go_sort.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B819FC1A0A00C4C50F /* go_sort.html */; };
+		D287160C19FC1A0A00C4C50F /* go_stateful_goroutine.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715B919FC1A0A00C4C50F /* go_stateful_goroutine.html */; };
+		D287160D19FC1A0A00C4C50F /* go_string_byte_convert.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715BA19FC1A0A00C4C50F /* go_string_byte_convert.html */; };
+		D287160E19FC1A0A00C4C50F /* go_string_format.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715BB19FC1A0A00C4C50F /* go_string_format.html */; };
+		D287160F19FC1A0A00C4C50F /* go_string_manipulate.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715BC19FC1A0A00C4C50F /* go_string_manipulate.html */; };
+		D287161019FC1A0A00C4C50F /* go_struct.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715BD19FC1A0A00C4C50F /* go_struct.html */; };
+		D287161119FC1A0A00C4C50F /* go_switch.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715BE19FC1A0A00C4C50F /* go_switch.html */; };
+		D287161219FC1A0A00C4C50F /* go_ticker.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715BF19FC1A0A00C4C50F /* go_ticker.html */; };
+		D287161319FC1A0A00C4C50F /* go_time.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C019FC1A0A00C4C50F /* go_time.html */; };
+		D287161419FC1A0A00C4C50F /* go_time_format_parse.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C119FC1A0A00C4C50F /* go_time_format_parse.html */; };
+		D287161519FC1A0A00C4C50F /* go_timeout.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C219FC1A0A00C4C50F /* go_timeout.html */; };
+		D287161619FC1A0A00C4C50F /* go_timer.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C319FC1A0A00C4C50F /* go_timer.html */; };
+		D287161719FC1A0A00C4C50F /* go_timestamp.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C419FC1A0A00C4C50F /* go_timestamp.html */; };
+		D287161819FC1A0A00C4C50F /* go_url_parse.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C519FC1A0A00C4C50F /* go_url_parse.html */; };
+		D287161919FC1A0A00C4C50F /* go_variable.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C619FC1A0A00C4C50F /* go_variable.html */; };
+		D287161A19FC1A0A00C4C50F /* go_variable_argument_list.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C719FC1A0A00C4C50F /* go_variable_argument_list.html */; };
+		D287161B19FC1A0A00C4C50F /* go_working_pool.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C819FC1A0A00C4C50F /* go_working_pool.html */; };
+		D287161C19FC1A0A00C4C50F /* go_write_file.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715C919FC1A0A00C4C50F /* go_write_file.html */; };
+		D287161D19FC1A0A00C4C50F /* highlight.pack.js in Resources */ = {isa = PBXBuildFile; fileRef = D28715CA19FC1A0A00C4C50F /* highlight.pack.js */; };
+		D287161E19FC1A0A00C4C50F /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = D28715CC19FC1A0A00C4C50F /* default.css */; };
+		D287161F19FC1A0A00C4C50F /* go_tutorial_10_use_package_test.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715CD19FC1A0A00C4C50F /* go_tutorial_10_use_package_test.html */; };
+		D287162019FC1A0A00C4C50F /* go_tutorial_1_how_to_install_go.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715CE19FC1A0A00C4C50F /* go_tutorial_1_how_to_install_go.html */; };
+		D287162119FC1A0A00C4C50F /* go_tutorial_2_data_type.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715CF19FC1A0A00C4C50F /* go_tutorial_2_data_type.html */; };
+		D287162219FC1A0A00C4C50F /* go_tutorial_3_variable.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715D019FC1A0A00C4C50F /* go_tutorial_3_variable.html */; };
+		D287162319FC1A0A00C4C50F /* go_tutorial_4_control_structure.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715D119FC1A0A00C4C50F /* go_tutorial_4_control_structure.html */; };
+		D287162419FC1A0A00C4C50F /* go_tutorial_5_array_slice_map.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715D219FC1A0A00C4C50F /* go_tutorial_5_array_slice_map.html */; };
+		D287162519FC1A0A00C4C50F /* go_tutorial_6_func.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715D319FC1A0A00C4C50F /* go_tutorial_6_func.html */; };
+		D287162619FC1A0A00C4C50F /* go_tutorial_7_pointer.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715D419FC1A0A00C4C50F /* go_tutorial_7_pointer.html */; };
+		D287162719FC1A0A00C4C50F /* go_tutorial_8_struct_interface.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715D519FC1A0A00C4C50F /* go_tutorial_8_struct_interface.html */; };
+		D287162819FC1A0A00C4C50F /* go_tutorial_9_parallel_compute.html in Resources */ = {isa = PBXBuildFile; fileRef = D28715D619FC1A0A00C4C50F /* go_tutorial_9_parallel_compute.html */; };
+		D287162919FC1A0A00C4C50F /* highlight.pack.js in Resources */ = {isa = PBXBuildFile; fileRef = D28715D719FC1A0A00C4C50F /* highlight.pack.js */; };
+		D287162C19FC1E5400C4C50F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287162B19FC1E5400C4C50F /* Course.swift */; };
+		D287162F19FC1EA000C4C50F /* basic_course_list.xml in Resources */ = {isa = PBXBuildFile; fileRef = D287162D19FC1EA000C4C50F /* basic_course_list.xml */; };
+		D287163019FC1EA000C4C50F /* example_course_list.xml in Resources */ = {isa = PBXBuildFile; fileRef = D287162E19FC1EA000C4C50F /* example_course_list.xml */; };
+		D287163219FC1FC100C4C50F /* XmlParseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287163119FC1FC100C4C50F /* XmlParseUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D248FFAE19FC327800793FF0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D287155C19FBFCD100C4C50F /* GolangStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolangStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D287156019FBFCD100C4C50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D287156119FBFCD100C4C50F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D287156319FBFCD100C4C50F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D287156619FBFCD100C4C50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D287156819FBFCD100C4C50F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D287156B19FBFCD100C4C50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D287158519FC1A0A00C4C50F /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
+		D287158619FC1A0A00C4C50F /* go_array.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_array.html; sourceTree = "<group>"; };
+		D287158719FC1A0A00C4C50F /* go_atomic_counter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_atomic_counter.html; sourceTree = "<group>"; };
+		D287158819FC1A0A00C4C50F /* go_base64_encoding.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_base64_encoding.html; sourceTree = "<group>"; };
+		D287158919FC1A0A00C4C50F /* go_buffered_channel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_buffered_channel.html; sourceTree = "<group>"; };
+		D287158A19FC1A0A00C4C50F /* go_channel_close.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_channel_close.html; sourceTree = "<group>"; };
+		D287158B19FC1A0A00C4C50F /* go_channel_direction.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_channel_direction.html; sourceTree = "<group>"; };
+		D287158C19FC1A0A00C4C50F /* go_channel_range.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_channel_range.html; sourceTree = "<group>"; };
+		D287158D19FC1A0A00C4C50F /* go_channel_select.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_channel_select.html; sourceTree = "<group>"; };
+		D287158E19FC1A0A00C4C50F /* go_channel_sync.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_channel_sync.html; sourceTree = "<group>"; };
+		D287158F19FC1A0A00C4C50F /* go_cmd_line_argument.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_cmd_line_argument.html; sourceTree = "<group>"; };
+		D287159019FC1A0A00C4C50F /* go_cmd_line_tag.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_cmd_line_tag.html; sourceTree = "<group>"; };
+		D287159119FC1A0A00C4C50F /* go_collection_manipulate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_collection_manipulate.html; sourceTree = "<group>"; };
+		D287159219FC1A0A00C4C50F /* go_constant.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_constant.html; sourceTree = "<group>"; };
+		D287159319FC1A0A00C4C50F /* go_customized_sort.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_customized_sort.html; sourceTree = "<group>"; };
+		D287159419FC1A0A00C4C50F /* go_defer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_defer.html; sourceTree = "<group>"; };
+		D287159519FC1A0A00C4C50F /* go_environment_variable.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_environment_variable.html; sourceTree = "<group>"; };
+		D287159619FC1A0A00C4C50F /* go_error_handle.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_error_handle.html; sourceTree = "<group>"; };
+		D287159719FC1A0A00C4C50F /* go_exit.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_exit.html; sourceTree = "<group>"; };
+		D287159819FC1A0A00C4C50F /* go_for_loop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_for_loop.html; sourceTree = "<group>"; };
+		D287159919FC1A0A00C4C50F /* go_func_callback.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_func_callback.html; sourceTree = "<group>"; };
+		D287159A19FC1A0A00C4C50F /* go_func_closure.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_func_closure.html; sourceTree = "<group>"; };
+		D287159B19FC1A0A00C4C50F /* go_func_define.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_func_define.html; sourceTree = "<group>"; };
+		D287159C19FC1A0A00C4C50F /* go_func_multiple_ret_value.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_func_multiple_ret_value.html; sourceTree = "<group>"; };
+		D287159D19FC1A0A00C4C50F /* go_func_named_ret_value.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_func_named_ret_value.html; sourceTree = "<group>"; };
+		D287159E19FC1A0A00C4C50F /* go_hello_world.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_hello_world.html; sourceTree = "<group>"; };
+		D287159F19FC1A0A00C4C50F /* go_if_elseif.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_if_elseif.html; sourceTree = "<group>"; };
+		D28715A019FC1A0A00C4C50F /* go_interface.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_interface.html; sourceTree = "<group>"; };
+		D28715A119FC1A0A00C4C50F /* go_json.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_json.html; sourceTree = "<group>"; };
+		D28715A219FC1A0A00C4C50F /* go_line_filters.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_line_filters.html; sourceTree = "<group>"; };
+		D28715A319FC1A0A00C4C50F /* go_map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_map.html; sourceTree = "<group>"; };
+		D28715A419FC1A0A00C4C50F /* go_method.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_method.html; sourceTree = "<group>"; };
+		D28715A519FC1A0A00C4C50F /* go_mutex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_mutex.html; sourceTree = "<group>"; };
+		D28715A619FC1A0A00C4C50F /* go_non_blocking_channel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_non_blocking_channel.html; sourceTree = "<group>"; };
+		D28715A719FC1A0A00C4C50F /* go_number.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_number.html; sourceTree = "<group>"; };
+		D28715A819FC1A0A00C4C50F /* go_number_parse.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_number_parse.html; sourceTree = "<group>"; };
+		D28715A919FC1A0A00C4C50F /* go_panic.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_panic.html; sourceTree = "<group>"; };
+		D28715AA19FC1A0A00C4C50F /* go_parallel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_parallel.html; sourceTree = "<group>"; };
+		D28715AB19FC1A0A00C4C50F /* go_parallel_channel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_parallel_channel.html; sourceTree = "<group>"; };
+		D28715AC19FC1A0A00C4C50F /* go_pointer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_pointer.html; sourceTree = "<group>"; };
+		D28715AD19FC1A0A00C4C50F /* go_process_run.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_process_run.html; sourceTree = "<group>"; };
+		D28715AE19FC1A0A00C4C50F /* go_process_trigger.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_process_trigger.html; sourceTree = "<group>"; };
+		D28715AF19FC1A0A00C4C50F /* go_rand_number.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_rand_number.html; sourceTree = "<group>"; };
+		D28715B019FC1A0A00C4C50F /* go_range.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_range.html; sourceTree = "<group>"; };
+		D28715B119FC1A0A00C4C50F /* go_read_file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_read_file.html; sourceTree = "<group>"; };
+		D28715B219FC1A0A00C4C50F /* go_recursion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_recursion.html; sourceTree = "<group>"; };
+		D28715B319FC1A0A00C4C50F /* go_regex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_regex.html; sourceTree = "<group>"; };
+		D28715B419FC1A0A00C4C50F /* go_req_freq_control.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_req_freq_control.html; sourceTree = "<group>"; };
+		D28715B519FC1A0A00C4C50F /* go_sha1_hash.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_sha1_hash.html; sourceTree = "<group>"; };
+		D28715B619FC1A0A00C4C50F /* go_signal_handle.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_signal_handle.html; sourceTree = "<group>"; };
+		D28715B719FC1A0A00C4C50F /* go_slice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_slice.html; sourceTree = "<group>"; };
+		D28715B819FC1A0A00C4C50F /* go_sort.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_sort.html; sourceTree = "<group>"; };
+		D28715B919FC1A0A00C4C50F /* go_stateful_goroutine.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_stateful_goroutine.html; sourceTree = "<group>"; };
+		D28715BA19FC1A0A00C4C50F /* go_string_byte_convert.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_string_byte_convert.html; sourceTree = "<group>"; };
+		D28715BB19FC1A0A00C4C50F /* go_string_format.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_string_format.html; sourceTree = "<group>"; };
+		D28715BC19FC1A0A00C4C50F /* go_string_manipulate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_string_manipulate.html; sourceTree = "<group>"; };
+		D28715BD19FC1A0A00C4C50F /* go_struct.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_struct.html; sourceTree = "<group>"; };
+		D28715BE19FC1A0A00C4C50F /* go_switch.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_switch.html; sourceTree = "<group>"; };
+		D28715BF19FC1A0A00C4C50F /* go_ticker.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_ticker.html; sourceTree = "<group>"; };
+		D28715C019FC1A0A00C4C50F /* go_time.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_time.html; sourceTree = "<group>"; };
+		D28715C119FC1A0A00C4C50F /* go_time_format_parse.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_time_format_parse.html; sourceTree = "<group>"; };
+		D28715C219FC1A0A00C4C50F /* go_timeout.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_timeout.html; sourceTree = "<group>"; };
+		D28715C319FC1A0A00C4C50F /* go_timer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_timer.html; sourceTree = "<group>"; };
+		D28715C419FC1A0A00C4C50F /* go_timestamp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_timestamp.html; sourceTree = "<group>"; };
+		D28715C519FC1A0A00C4C50F /* go_url_parse.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_url_parse.html; sourceTree = "<group>"; };
+		D28715C619FC1A0A00C4C50F /* go_variable.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_variable.html; sourceTree = "<group>"; };
+		D28715C719FC1A0A00C4C50F /* go_variable_argument_list.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_variable_argument_list.html; sourceTree = "<group>"; };
+		D28715C819FC1A0A00C4C50F /* go_working_pool.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_working_pool.html; sourceTree = "<group>"; };
+		D28715C919FC1A0A00C4C50F /* go_write_file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_write_file.html; sourceTree = "<group>"; };
+		D28715CA19FC1A0A00C4C50F /* highlight.pack.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highlight.pack.js; sourceTree = "<group>"; };
+		D28715CC19FC1A0A00C4C50F /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
+		D28715CD19FC1A0A00C4C50F /* go_tutorial_10_use_package_test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_10_use_package_test.html; sourceTree = "<group>"; };
+		D28715CE19FC1A0A00C4C50F /* go_tutorial_1_how_to_install_go.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_1_how_to_install_go.html; sourceTree = "<group>"; };
+		D28715CF19FC1A0A00C4C50F /* go_tutorial_2_data_type.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_2_data_type.html; sourceTree = "<group>"; };
+		D28715D019FC1A0A00C4C50F /* go_tutorial_3_variable.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_3_variable.html; sourceTree = "<group>"; };
+		D28715D119FC1A0A00C4C50F /* go_tutorial_4_control_structure.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_4_control_structure.html; sourceTree = "<group>"; };
+		D28715D219FC1A0A00C4C50F /* go_tutorial_5_array_slice_map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_5_array_slice_map.html; sourceTree = "<group>"; };
+		D28715D319FC1A0A00C4C50F /* go_tutorial_6_func.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_6_func.html; sourceTree = "<group>"; };
+		D28715D419FC1A0A00C4C50F /* go_tutorial_7_pointer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_7_pointer.html; sourceTree = "<group>"; };
+		D28715D519FC1A0A00C4C50F /* go_tutorial_8_struct_interface.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_8_struct_interface.html; sourceTree = "<group>"; };
+		D28715D619FC1A0A00C4C50F /* go_tutorial_9_parallel_compute.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = go_tutorial_9_parallel_compute.html; sourceTree = "<group>"; };
+		D28715D719FC1A0A00C4C50F /* highlight.pack.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highlight.pack.js; sourceTree = "<group>"; };
+		D287162B19FC1E5400C4C50F /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		D287162D19FC1EA000C4C50F /* basic_course_list.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = basic_course_list.xml; sourceTree = "<group>"; };
+		D287162E19FC1EA000C4C50F /* example_course_list.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example_course_list.xml; sourceTree = "<group>"; };
+		D287163119FC1FC100C4C50F /* XmlParseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlParseUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D287155919FBFCD100C4C50F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D287155319FBFCD100C4C50F = {
+			isa = PBXGroup;
+			children = (
+				D287155E19FBFCD100C4C50F /* GolangStudy */,
+				D287155D19FBFCD100C4C50F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D287155D19FBFCD100C4C50F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D287155C19FBFCD100C4C50F /* GolangStudy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D287155E19FBFCD100C4C50F /* GolangStudy */ = {
+			isa = PBXGroup;
+			children = (
+				D287162A19FC1E2E00C4C50F /* Model */,
+				D287156119FBFCD100C4C50F /* AppDelegate.swift */,
+				D287156319FBFCD100C4C50F /* ViewController.swift */,
+				D248FFAE19FC327800793FF0 /* DetailViewController.swift */,
+				D287156519FBFCD100C4C50F /* Main.storyboard */,
+				D287156819FBFCD100C4C50F /* Images.xcassets */,
+				D287156A19FBFCD100C4C50F /* LaunchScreen.xib */,
+				D287155F19FBFCD100C4C50F /* Supporting Files */,
+			);
+			path = GolangStudy;
+			sourceTree = "<group>";
+		};
+		D287155F19FBFCD100C4C50F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D287162D19FC1EA000C4C50F /* basic_course_list.xml */,
+				D287162E19FC1EA000C4C50F /* example_course_list.xml */,
+				D287158319FC1A0A00C4C50F /* tutorial */,
+				D287156019FBFCD100C4C50F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D287158319FC1A0A00C4C50F /* tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				D287158419FC1A0A00C4C50F /* go_by_example */,
+				D28715CB19FC1A0A00C4C50F /* go_tutorial */,
+			);
+			path = tutorial;
+			sourceTree = "<group>";
+		};
+		D287158419FC1A0A00C4C50F /* go_by_example */ = {
+			isa = PBXGroup;
+			children = (
+				D287158519FC1A0A00C4C50F /* default.css */,
+				D287158619FC1A0A00C4C50F /* go_array.html */,
+				D287158719FC1A0A00C4C50F /* go_atomic_counter.html */,
+				D287158819FC1A0A00C4C50F /* go_base64_encoding.html */,
+				D287158919FC1A0A00C4C50F /* go_buffered_channel.html */,
+				D287158A19FC1A0A00C4C50F /* go_channel_close.html */,
+				D287158B19FC1A0A00C4C50F /* go_channel_direction.html */,
+				D287158C19FC1A0A00C4C50F /* go_channel_range.html */,
+				D287158D19FC1A0A00C4C50F /* go_channel_select.html */,
+				D287158E19FC1A0A00C4C50F /* go_channel_sync.html */,
+				D287158F19FC1A0A00C4C50F /* go_cmd_line_argument.html */,
+				D287159019FC1A0A00C4C50F /* go_cmd_line_tag.html */,
+				D287159119FC1A0A00C4C50F /* go_collection_manipulate.html */,
+				D287159219FC1A0A00C4C50F /* go_constant.html */,
+				D287159319FC1A0A00C4C50F /* go_customized_sort.html */,
+				D287159419FC1A0A00C4C50F /* go_defer.html */,
+				D287159519FC1A0A00C4C50F /* go_environment_variable.html */,
+				D287159619FC1A0A00C4C50F /* go_error_handle.html */,
+				D287159719FC1A0A00C4C50F /* go_exit.html */,
+				D287159819FC1A0A00C4C50F /* go_for_loop.html */,
+				D287159919FC1A0A00C4C50F /* go_func_callback.html */,
+				D287159A19FC1A0A00C4C50F /* go_func_closure.html */,
+				D287159B19FC1A0A00C4C50F /* go_func_define.html */,
+				D287159C19FC1A0A00C4C50F /* go_func_multiple_ret_value.html */,
+				D287159D19FC1A0A00C4C50F /* go_func_named_ret_value.html */,
+				D287159E19FC1A0A00C4C50F /* go_hello_world.html */,
+				D287159F19FC1A0A00C4C50F /* go_if_elseif.html */,
+				D28715A019FC1A0A00C4C50F /* go_interface.html */,
+				D28715A119FC1A0A00C4C50F /* go_json.html */,
+				D28715A219FC1A0A00C4C50F /* go_line_filters.html */,
+				D28715A319FC1A0A00C4C50F /* go_map.html */,
+				D28715A419FC1A0A00C4C50F /* go_method.html */,
+				D28715A519FC1A0A00C4C50F /* go_mutex.html */,
+				D28715A619FC1A0A00C4C50F /* go_non_blocking_channel.html */,
+				D28715A719FC1A0A00C4C50F /* go_number.html */,
+				D28715A819FC1A0A00C4C50F /* go_number_parse.html */,
+				D28715A919FC1A0A00C4C50F /* go_panic.html */,
+				D28715AA19FC1A0A00C4C50F /* go_parallel.html */,
+				D28715AB19FC1A0A00C4C50F /* go_parallel_channel.html */,
+				D28715AC19FC1A0A00C4C50F /* go_pointer.html */,
+				D28715AD19FC1A0A00C4C50F /* go_process_run.html */,
+				D28715AE19FC1A0A00C4C50F /* go_process_trigger.html */,
+				D28715AF19FC1A0A00C4C50F /* go_rand_number.html */,
+				D28715B019FC1A0A00C4C50F /* go_range.html */,
+				D28715B119FC1A0A00C4C50F /* go_read_file.html */,
+				D28715B219FC1A0A00C4C50F /* go_recursion.html */,
+				D28715B319FC1A0A00C4C50F /* go_regex.html */,
+				D28715B419FC1A0A00C4C50F /* go_req_freq_control.html */,
+				D28715B519FC1A0A00C4C50F /* go_sha1_hash.html */,
+				D28715B619FC1A0A00C4C50F /* go_signal_handle.html */,
+				D28715B719FC1A0A00C4C50F /* go_slice.html */,
+				D28715B819FC1A0A00C4C50F /* go_sort.html */,
+				D28715B919FC1A0A00C4C50F /* go_stateful_goroutine.html */,
+				D28715BA19FC1A0A00C4C50F /* go_string_byte_convert.html */,
+				D28715BB19FC1A0A00C4C50F /* go_string_format.html */,
+				D28715BC19FC1A0A00C4C50F /* go_string_manipulate.html */,
+				D28715BD19FC1A0A00C4C50F /* go_struct.html */,
+				D28715BE19FC1A0A00C4C50F /* go_switch.html */,
+				D28715BF19FC1A0A00C4C50F /* go_ticker.html */,
+				D28715C019FC1A0A00C4C50F /* go_time.html */,
+				D28715C119FC1A0A00C4C50F /* go_time_format_parse.html */,
+				D28715C219FC1A0A00C4C50F /* go_timeout.html */,
+				D28715C319FC1A0A00C4C50F /* go_timer.html */,
+				D28715C419FC1A0A00C4C50F /* go_timestamp.html */,
+				D28715C519FC1A0A00C4C50F /* go_url_parse.html */,
+				D28715C619FC1A0A00C4C50F /* go_variable.html */,
+				D28715C719FC1A0A00C4C50F /* go_variable_argument_list.html */,
+				D28715C819FC1A0A00C4C50F /* go_working_pool.html */,
+				D28715C919FC1A0A00C4C50F /* go_write_file.html */,
+				D28715CA19FC1A0A00C4C50F /* highlight.pack.js */,
+			);
+			path = go_by_example;
+			sourceTree = "<group>";
+		};
+		D28715CB19FC1A0A00C4C50F /* go_tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				D28715CC19FC1A0A00C4C50F /* default.css */,
+				D28715CD19FC1A0A00C4C50F /* go_tutorial_10_use_package_test.html */,
+				D28715CE19FC1A0A00C4C50F /* go_tutorial_1_how_to_install_go.html */,
+				D28715CF19FC1A0A00C4C50F /* go_tutorial_2_data_type.html */,
+				D28715D019FC1A0A00C4C50F /* go_tutorial_3_variable.html */,
+				D28715D119FC1A0A00C4C50F /* go_tutorial_4_control_structure.html */,
+				D28715D219FC1A0A00C4C50F /* go_tutorial_5_array_slice_map.html */,
+				D28715D319FC1A0A00C4C50F /* go_tutorial_6_func.html */,
+				D28715D419FC1A0A00C4C50F /* go_tutorial_7_pointer.html */,
+				D28715D519FC1A0A00C4C50F /* go_tutorial_8_struct_interface.html */,
+				D28715D619FC1A0A00C4C50F /* go_tutorial_9_parallel_compute.html */,
+				D28715D719FC1A0A00C4C50F /* highlight.pack.js */,
+			);
+			path = go_tutorial;
+			sourceTree = "<group>";
+		};
+		D287162A19FC1E2E00C4C50F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D287162B19FC1E5400C4C50F /* Course.swift */,
+				D287163119FC1FC100C4C50F /* XmlParseUtil.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D287155B19FBFCD100C4C50F /* GolangStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D287157B19FBFCD100C4C50F /* Build configuration list for PBXNativeTarget "GolangStudy" */;
+			buildPhases = (
+				D287155819FBFCD100C4C50F /* Sources */,
+				D287155919FBFCD100C4C50F /* Frameworks */,
+				D287155A19FBFCD100C4C50F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GolangStudy;
+			productName = GolangStudy;
+			productReference = D287155C19FBFCD100C4C50F /* GolangStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D287155419FBFCD100C4C50F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = scott;
+				TargetAttributes = {
+					D287155B19FBFCD100C4C50F = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D287155719FBFCD100C4C50F /* Build configuration list for PBXProject "GolangStudy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D287155319FBFCD100C4C50F;
+			productRefGroup = D287155D19FBFCD100C4C50F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D287155B19FBFCD100C4C50F /* GolangStudy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D287155A19FBFCD100C4C50F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D287161219FC1A0A00C4C50F /* go_ticker.html in Resources */,
+				D28715E419FC1A0A00C4C50F /* go_collection_manipulate.html in Resources */,
+				D287161519FC1A0A00C4C50F /* go_timeout.html in Resources */,
+				D287161419FC1A0A00C4C50F /* go_time_format_parse.html in Resources */,
+				D28715E619FC1A0A00C4C50F /* go_customized_sort.html in Resources */,
+				D28715E219FC1A0A00C4C50F /* go_cmd_line_argument.html in Resources */,
+				D28715FE19FC1A0A00C4C50F /* go_parallel_channel.html in Resources */,
+				D287156719FBFCD100C4C50F /* Main.storyboard in Resources */,
+				D28715EA19FC1A0A00C4C50F /* go_exit.html in Resources */,
+				D287160919FC1A0A00C4C50F /* go_signal_handle.html in Resources */,
+				D28715EF19FC1A0A00C4C50F /* go_func_multiple_ret_value.html in Resources */,
+				D287163019FC1EA000C4C50F /* example_course_list.xml in Resources */,
+				D287161B19FC1A0A00C4C50F /* go_working_pool.html in Resources */,
+				D28715EC19FC1A0A00C4C50F /* go_func_callback.html in Resources */,
+				D28715F219FC1A0A00C4C50F /* go_if_elseif.html in Resources */,
+				D287162019FC1A0A00C4C50F /* go_tutorial_1_how_to_install_go.html in Resources */,
+				D28715E719FC1A0A00C4C50F /* go_defer.html in Resources */,
+				D287160A19FC1A0A00C4C50F /* go_slice.html in Resources */,
+				D28715E319FC1A0A00C4C50F /* go_cmd_line_tag.html in Resources */,
+				D28715E819FC1A0A00C4C50F /* go_environment_variable.html in Resources */,
+				D287160219FC1A0A00C4C50F /* go_rand_number.html in Resources */,
+				D28715F619FC1A0A00C4C50F /* go_map.html in Resources */,
+				D287156C19FBFCD100C4C50F /* LaunchScreen.xib in Resources */,
+				D287161319FC1A0A00C4C50F /* go_time.html in Resources */,
+				D287160019FC1A0A00C4C50F /* go_process_run.html in Resources */,
+				D287161F19FC1A0A00C4C50F /* go_tutorial_10_use_package_test.html in Resources */,
+				D287161819FC1A0A00C4C50F /* go_url_parse.html in Resources */,
+				D28715F319FC1A0A00C4C50F /* go_interface.html in Resources */,
+				D287161019FC1A0A00C4C50F /* go_struct.html in Resources */,
+				D287160D19FC1A0A00C4C50F /* go_string_byte_convert.html in Resources */,
+				D28715E019FC1A0A00C4C50F /* go_channel_select.html in Resources */,
+				D287160319FC1A0A00C4C50F /* go_range.html in Resources */,
+				D28715FA19FC1A0A00C4C50F /* go_number.html in Resources */,
+				D287160419FC1A0A00C4C50F /* go_read_file.html in Resources */,
+				D287160E19FC1A0A00C4C50F /* go_string_format.html in Resources */,
+				D287162619FC1A0A00C4C50F /* go_tutorial_7_pointer.html in Resources */,
+				D28715FC19FC1A0A00C4C50F /* go_panic.html in Resources */,
+				D28715DB19FC1A0A00C4C50F /* go_base64_encoding.html in Resources */,
+				D28715DF19FC1A0A00C4C50F /* go_channel_range.html in Resources */,
+				D287161E19FC1A0A00C4C50F /* default.css in Resources */,
+				D287162F19FC1EA000C4C50F /* basic_course_list.xml in Resources */,
+				D28715EE19FC1A0A00C4C50F /* go_func_define.html in Resources */,
+				D28715FB19FC1A0A00C4C50F /* go_number_parse.html in Resources */,
+				D287160619FC1A0A00C4C50F /* go_regex.html in Resources */,
+				D287160C19FC1A0A00C4C50F /* go_stateful_goroutine.html in Resources */,
+				D287162719FC1A0A00C4C50F /* go_tutorial_8_struct_interface.html in Resources */,
+				D287162119FC1A0A00C4C50F /* go_tutorial_2_data_type.html in Resources */,
+				D287160B19FC1A0A00C4C50F /* go_sort.html in Resources */,
+				D287161619FC1A0A00C4C50F /* go_timer.html in Resources */,
+				D287160719FC1A0A00C4C50F /* go_req_freq_control.html in Resources */,
+				D28715E119FC1A0A00C4C50F /* go_channel_sync.html in Resources */,
+				D287161719FC1A0A00C4C50F /* go_timestamp.html in Resources */,
+				D28715DD19FC1A0A00C4C50F /* go_channel_close.html in Resources */,
+				D28715DE19FC1A0A00C4C50F /* go_channel_direction.html in Resources */,
+				D287160519FC1A0A00C4C50F /* go_recursion.html in Resources */,
+				D28715ED19FC1A0A00C4C50F /* go_func_closure.html in Resources */,
+				D287162219FC1A0A00C4C50F /* go_tutorial_3_variable.html in Resources */,
+				D287162319FC1A0A00C4C50F /* go_tutorial_4_control_structure.html in Resources */,
+				D287161A19FC1A0A00C4C50F /* go_variable_argument_list.html in Resources */,
+				D287160819FC1A0A00C4C50F /* go_sha1_hash.html in Resources */,
+				D28715DC19FC1A0A00C4C50F /* go_buffered_channel.html in Resources */,
+				D28715F919FC1A0A00C4C50F /* go_non_blocking_channel.html in Resources */,
+				D28715F719FC1A0A00C4C50F /* go_method.html in Resources */,
+				D28715DA19FC1A0A00C4C50F /* go_atomic_counter.html in Resources */,
+				D287161919FC1A0A00C4C50F /* go_variable.html in Resources */,
+				D28715E519FC1A0A00C4C50F /* go_constant.html in Resources */,
+				D28715F019FC1A0A00C4C50F /* go_func_named_ret_value.html in Resources */,
+				D287161119FC1A0A00C4C50F /* go_switch.html in Resources */,
+				D28715D919FC1A0A00C4C50F /* go_array.html in Resources */,
+				D287160119FC1A0A00C4C50F /* go_process_trigger.html in Resources */,
+				D287161C19FC1A0A00C4C50F /* go_write_file.html in Resources */,
+				D28715F519FC1A0A00C4C50F /* go_line_filters.html in Resources */,
+				D28715EB19FC1A0A00C4C50F /* go_for_loop.html in Resources */,
+				D28715FF19FC1A0A00C4C50F /* go_pointer.html in Resources */,
+				D28715E919FC1A0A00C4C50F /* go_error_handle.html in Resources */,
+				D287160F19FC1A0A00C4C50F /* go_string_manipulate.html in Resources */,
+				D28715FD19FC1A0A00C4C50F /* go_parallel.html in Resources */,
+				D287162819FC1A0A00C4C50F /* go_tutorial_9_parallel_compute.html in Resources */,
+				D287156919FBFCD100C4C50F /* Images.xcassets in Resources */,
+				D287161D19FC1A0A00C4C50F /* highlight.pack.js in Resources */,
+				D28715F819FC1A0A00C4C50F /* go_mutex.html in Resources */,
+				D287162919FC1A0A00C4C50F /* highlight.pack.js in Resources */,
+				D287162419FC1A0A00C4C50F /* go_tutorial_5_array_slice_map.html in Resources */,
+				D287162519FC1A0A00C4C50F /* go_tutorial_6_func.html in Resources */,
+				D28715F119FC1A0A00C4C50F /* go_hello_world.html in Resources */,
+				D28715F419FC1A0A00C4C50F /* go_json.html in Resources */,
+				D28715D819FC1A0A00C4C50F /* default.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D287155819FBFCD100C4C50F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D287162C19FC1E5400C4C50F /* Course.swift in Sources */,
+				D287163219FC1FC100C4C50F /* XmlParseUtil.swift in Sources */,
+				D248FFAF19FC327800793FF0 /* DetailViewController.swift in Sources */,
+				D287156419FBFCD100C4C50F /* ViewController.swift in Sources */,
+				D287156219FBFCD100C4C50F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D287156519FBFCD100C4C50F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D287156619FBFCD100C4C50F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D287156A19FBFCD100C4C50F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D287156B19FBFCD100C4C50F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D287157919FBFCD100C4C50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D287157A19FBFCD100C4C50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D287157C19FBFCD100C4C50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GolangStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D287157D19FBFCD100C4C50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GolangStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D287155719FBFCD100C4C50F /* Build configuration list for PBXProject "GolangStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D287157919FBFCD100C4C50F /* Debug */,
+				D287157A19FBFCD100C4C50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D287157B19FBFCD100C4C50F /* Build configuration list for PBXNativeTarget "GolangStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D287157C19FBFCD100C4C50F /* Debug */,
+				D287157D19FBFCD100C4C50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D287155419FBFCD100C4C50F /* Project object */;
+}
